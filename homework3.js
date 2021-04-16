@@ -1,9 +1,17 @@
-function count(a, b) {
-    for (var i = a; i <= b; i++) {
-        for (var j = 2; j < i; j++) {
-            if (i % j == 0) i++
+function count(c) {
+    if (c == 1) return 1;
+    else {
+        for (var j = 2; j < c; j++) {
+            if (c % j == 0) return 0;
         }
-        console.log(i);
+    }
+    return 1;
+}
+function between(a, b) {
+    for (var i = a; i <= b; i++) {
+        if (count(i)) {
+            console.log(i)
+        }
     }
 }
-count(1, 9)
+between(3, 14)
