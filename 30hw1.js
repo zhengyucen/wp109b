@@ -10,7 +10,14 @@ class Vector {
         }
         return new Vector(r)
     }
-    dot(v2) {
+    sub(y) {
+        var r = 0;
+        var x = this
+        for (var i = 0; i < a.x.length; i++) {
+            r = x.a[i] - y.a[i]
+        }
+    }
+    dot(y) {
         var r = 0;
         var x = this
         for (var i = 0; i < x.a.length; i++) {
@@ -29,8 +36,9 @@ class Vector {
 }
 var x = new Vector([1, 2, 3])
 var na = x.neg()
-console.log("x.neg(x)=", na)
 var b = x.add(na)
-console.log("x.add(x)=", b)
 var t = x.dot(x)
+var y = new Vector([1, 1, 1])
+console.log("x.add(x)=", b)
+console.log("x.neg(x)=", na)
 console.log("x.dot(x)=", t)
