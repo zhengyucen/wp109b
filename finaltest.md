@@ -12,9 +12,11 @@
 ## 技術手段
 
 開始按鈕的觸發:
+
  *prompt為觸發一個可輸入的彈跳視窗
  *if內為防止用戶輸入空值,空白(因為isNaN會將空值空白視為0,所以必須一起判斷)和非數字的內容
  *時間觸發 圖片位置,時間倒數(下方介紹)
+
 ```{r}
 function button1_click() {
             var picturetime;
@@ -30,8 +32,10 @@ function button1_click() {
 ```
 
 停止按鈕的觸發:
+
  *cleanInterval清除計時器,以及速度
  *將分數,秒數,位置全部回歸為初始值
+
 ```{r}
 function button2_click() {
             clearInterval(timer);
@@ -46,9 +50,11 @@ function button2_click() {
 ```
 
 時間倒數:
+
  *每次觸發時間-1
  *並將結果反應在html
  *如果時間到,將觸發 跳出(下方介紹)
+
 ```{r}
 function time_out() {
             Settime -= 1;
@@ -61,7 +67,9 @@ function time_out() {
 ```
 
 圖片位置:
+
  *x,y為div框的絕對位置,由math.random去做隨機,使圖片亂跑
+
 ```{r}
 function mouse() {
             x = parseInt(Math.random() * 900);
@@ -72,7 +80,9 @@ function mouse() {
 ```
 
 跳出:
+
  *遊戲結束,彈跳視窗,並判斷使用者點擊確認或取消(true false)
+
 ```{r}
 function jump() {
             var r = confirm("你的分數是:" + count + "分,是否重新開始");
@@ -87,7 +97,9 @@ function jump() {
 ```
 
 計算分數:
+
  *由圖片上的onclick觸發,來計算分數
+ 
 ```{r}
 function countscore() {
             count = count + 1;
