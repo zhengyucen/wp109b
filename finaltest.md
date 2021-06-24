@@ -12,7 +12,7 @@
 ## 技術手段
 
 開始按鈕:
-
+```{r}
 function button1_click() {
             var picturetime;
             var picturetime = prompt("請輸入圖片速度(毫秒/變換位置)", "1000");
@@ -24,3 +24,4 @@ function button1_click() {
                 alert("請輸入數字");
             }
         }
+```
