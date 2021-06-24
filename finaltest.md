@@ -1,6 +1,6 @@
 # 反應速度訓練
 
-## 來源:彈窗部分參考自菜鳥教程,網址如下:https://www.runoob.com/js/js-popup.html 
+## 來源:彈窗部分參考自菜鳥教程,網址如下:https://www.runoob.com/js/js-popup.html 其他部分為原創
 
 ## 遊玩方法:
 
@@ -12,6 +12,7 @@
 ## 技術手段
 
 開始按鈕:
+
 function button1_click() {
             var picturetime;
             var picturetime = prompt("請輸入圖片速度(毫秒/變換位置)", "1000");
