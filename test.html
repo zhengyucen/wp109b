@@ -1,0 +1,17 @@
+<span id="Check_Txt" style="color:red">時間計數：<span id="Check_i">0小時0分0秒</span></span>
+<script type="text/javascript">
+    var SetMinute = 0;
+    function Check_Time() {
+        SetMinute += 1;
+        var Check_i = document.getElementById("Check_i");
+
+        var Cal_Hour = Math.floor(SetMinute / 3600);
+        var Cal_Minute = Math.floor(Math.floor(SetMinute % 3600) / 60);
+        var Cal_Second = SetMinute % 60;
+
+        Check_i.innerHTML = Cal_Hour + "小時" + Cal_Minute + "分" + Cal_Second + "秒";
+
+    }
+    var mm = window.setInterval("Check_Time()", 1000);
+
+</script>
