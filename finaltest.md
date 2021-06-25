@@ -19,8 +19,7 @@
 
 ```{r}
 function button1_click() {
-            var picturetime;
-            var picturetime = prompt("請輸入圖片速度(毫秒/變換位置)", "1000");
+            picturetime = prompt("請輸入圖片速度(毫秒/變換位置)", "1000");
             if (picturetime != null && picturetime != "" && !isNaN(picturetime)) {
                 timer = setInterval(function () { mouse() }, picturetime);
                 mm = setInterval(function () { time_out() }, 1000);
@@ -85,7 +84,7 @@ function mouse() {
 
 ```{r}
 function jump() {
-            var r = confirm("你的分數是:" + count + "分,是否重新開始");
+            var r = confirm("你的速度為" + picturetime + "你的分數是:" + count + "分,是否重新開始");
             if (r == true) {
                 button2_click();
                 button1_click();
